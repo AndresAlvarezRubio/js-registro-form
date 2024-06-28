@@ -1,0 +1,39 @@
+/*****                    RESET CSS                  *****/
+html{color:#222;margin:0;padding:0;}h1,h2,h3,h4,h5,h6 {font-weight: normal;}header a{text-decoration: none;}body,ul{padding:0;margin:0;scroll-behavior: smooth;}li{list-style: none;}::-moz-selection{background: #b3d4fc;text-shadow: none;}::selection {background: #b3d4fc;text-shadow: none;}hr {display: block;height: 1px;border: 0;border-top: 1px solid #ccc;margin: 1em 0;padding: 0;}audio,canvas,iframe,img,svg,video{vertical-align: middle;}fieldset {border: 0;margin: 0;padding: 0;}textarea {resize: vertical;}.hidden,[hidden] { display: none !important;}.visually-hidden {border: 0;clip: rect(0, 0, 0, 0);height: 1px;margin: -1px;overflow: hidden;padding: 0;position: absolute;white-space: nowrap;width: 1px;}.visually-hidden.focusable:active,.visually-hidden.focusable:focus {clip: auto;height: auto;margin: 0;overflow: visible;position: static;white-space: inherit;width: auto;}.invisible {visibility: hidden;}a,a:visited {text-decoration: underline;}abbr[title]::after {  content: " (" attr(title) ")";}a[href^="#"]::after,a[href^="javascript:"]::after {  content: "";}pre,blockquote {  border: 1px solid #999;  page-break-inside: avoid;}tr,img {  page-break-inside: avoid;}p,h2,h3 {  orphans: 3;  widows: 3;  margin: 0;}h2,h3 {  page-break-after: avoid;}* {position: relative;outline: none;font-family: monospace sans-serif;-webkit-font-smoothing: antialiased;padding: 0;box-sizing: border-box;margin: 0;word-break: break-word;-webkit-appearance: none;-moz-appearance: none;appearance: none;}button{padding:5px 10px;border-radius:5px;border: 1px solid;margin:5px;cursor: pointer;}body::-webkit-scrollbar{width:0;}table{border-spacing:0}
+/*****                FIN RESET CSS                  *****/
+.container-main {
+    text-align: center;
+    padding: 30px;
+}
+.container-main h1, .container-main p {
+    margin-bottom: 20px;
+}
+.rojo {
+    color:red;
+}
+form {
+    width: calc(100% - 30px);
+    max-width: 500px;
+    padding: 20px;
+    margin: auto;
+    background-color: rgb(200, 200, 200);
+    border: 1px solid blue;
+    border-radius: 20px;
+}
+.form-group input {
+    display: block;
+    width: 100%;
+}
+
+input{
+    padding: 10px;
+    margin: 10px 0 20px;
+    border-radius: 10px;
+    border: 1px solid blue;
+}
+.errorInput {
+    border: 1px solid red;
+}
+.validoInput {
+    border: 1px solid green;
+}

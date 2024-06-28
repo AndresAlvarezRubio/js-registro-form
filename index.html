@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+</head>
+<body>
+    <div class="container-main">
+        <h1>Registro de Usuario</h1>
+        <div class="manolo">
+            <p>A continuación, indique los datos solicitados para darse de alta en nuestro sistema</p>
+            <p>[Los datos marcados con <span class="rojo">*</span> son obligatorios]</p>
+        </div>
+    </div>
+    <form action="index.php" id="registroForm" onsubmit="return validarFormulario()">
+        <p class="form-group">
+            <label for="nombre"><span class="rojo">*</span>Nombre:</label>
+            <input id="nombre" name="nombre" type="text" placeholder="Introduzca su nombre">
+            <div class="mensaje-error" id="errorNombre"></div>
+        </p>
+        <p class="form-group">
+            <label for="apellidos"><span class="rojo">*</span>Apellidos:</label>
+            <input id="apellidos" name="apellidos" type="text" placeholder="Introduzca sus apellidos">
+            <div class="mensaje-error" id="errorApellido"></div>            
+        </p>
+        <p class="form-group">
+            <label for="edad"><span class="rojo">*</span>Edad:</label>
+            <input id="edad" name="edad" type="text" placeholder="Introduzca su edad" maxlength="3">
+            <div class="mensaje-error" id="errorEdad"></div>            
+        </p>
+        <p class="form-group">
+            <label for="telefono"><span class="rojo">*</span>Número:</label>
+            <input id="telefono" name="telefono" type="number" placeholder="Introduzca su número" maxlength="9">
+            <div class="mensaje-error" id="errorTelefono"></div>            
+        </p>
+        <p class="form-group">
+            <label for="direccion"><span class="rojo">*</span>Dirección:</label>
+            <input id="direccion" name="direccion" type="text" placeholder="Introduzca su dirección">
+            <div class="mensaje-error" id="errorDireccion"></div>            
+        </p>
+        <p class="form-group">
+            <label for="email"><span class="rojo">*</span>Email:</label>
+            <input id="email" name="email" type="email" placeholder="Introduzca su Email">
+            <div class="mensaje-error" id="errorEmail"></div>            
+        </p>
+        <p class="form-group">
+            <label for="contrasenia1"><span class="rojo">*</span>Contraseña:</label>
+            <input id="contrasenia1" name="contrasenia1" type="password" placeholder="Introduzca su contraseña">
+            <div class="mensaje-error" id="errorContrasenia1"></div>            
+        </p>
+        <p class="form-group">
+            <label for="contrasenia2"><span class="rojo">*</span>Repetir Contaseña:</label>
+            <input id="contrasenia2" name="contrasenia2" type="password" placeholder="Vuelva a introducir su contraseña">
+            <div class="mensaje-error" id="errorContrasenia2"></div>            
+        </p>
+        <p class="form-group">
+            <button type="button" value="Registrar" id="registrar">enviar</button>
+            <button type="reset" value="borrar" id="eliminar">eliminar</button>
+        </p>
+    </form>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
