@@ -197,6 +197,7 @@ function validarEmail() {
 
 }
 
+
 function validarContrasenia1() {
     
     let contrasenia = document.querySelector("#contrasenia1");
